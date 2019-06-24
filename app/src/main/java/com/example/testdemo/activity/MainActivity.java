@@ -1,8 +1,10 @@
 package com.example.testdemo.activity;
 
 
+import android.support.annotation.NonNull;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.RecyclerView;
+import android.view.ViewGroup;
 
 import com.example.testdemo.R;
 import com.example.testdemo.activity.BaseActivity;
@@ -40,6 +42,22 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void initLisner() {
+        mRecycle.setAdapter(new RecyclerView.Adapter() {
+            @NonNull
+            @Override
+            public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+                return null;
+            }
 
+            @Override
+            public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+
+            }
+
+            @Override
+            public int getItemCount() {
+                return 0;
+            }
+        });
     }
 }
