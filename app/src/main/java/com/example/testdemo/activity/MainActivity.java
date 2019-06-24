@@ -42,22 +42,6 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void initLisner() {
-        mRecycle.setAdapter(new RecyclerView.Adapter() {
-            @NonNull
-            @Override
-            public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-                return null;
-            }
 
-            @Override
-            public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-
-            }
-
-            @Override
-            public int getItemCount() {
-                return 0;
-            }
-        });
     }
 }
